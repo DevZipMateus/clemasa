@@ -293,7 +293,7 @@ ul { list-style: none; }
   padding-top: var(--header-h);
   background:
     linear-gradient(135deg, rgba(26,26,46,0.90) 0%, rgba(53,53,197,0.82) 100%),
-    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80') center/cover no-repeat;
+    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80') center/cover no-repeat;
   background-attachment: fixed, fixed;
   text-align: center;
   color: var(--branco);
@@ -392,7 +392,10 @@ ul { list-style: none; }
    STATS
    ============================================= */
 #stats {
-  background: var(--chumbo);
+  background:
+    linear-gradient(rgba(26,26,46,0.95), rgba(26,26,46,0.95)),
+    url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1400&q=80') center/cover no-repeat;
+  background-attachment: fixed, fixed;
   padding: 52px 0;
   position: relative;
   isolation: isolate;
@@ -452,7 +455,10 @@ ul { list-style: none; }
    ============================================= */
 #sobre {
   padding: 100px 0;
-  background: var(--branco);
+  background:
+    linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
+    url('https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=1400&q=80') center/cover no-repeat;
+  background-attachment: fixed, fixed;
 }
 .sobre-grid {
   display: grid;
@@ -557,7 +563,10 @@ ul { list-style: none; }
    ============================================= */
 #mvv {
   padding: 100px 0;
-  background: var(--cinza-claro);
+  background:
+    linear-gradient(rgba(244,246,250,0.93), rgba(244,246,250,0.93)),
+    url('https://images.unsplash.com/photo-1590341328520-63256eb32622?w=1400&q=80') center/cover no-repeat;
+  background-attachment: fixed, fixed;
 }
 .mvv-grid {
   display: grid;
@@ -578,13 +587,9 @@ ul { list-style: none; }
   box-shadow: var(--shadow-md);
 }
 .mvv-card--destaque {
-  background: var(--azul);
-  border-top-color: #7B7BFF;
+  background: var(--branco);
+  border-top-color: var(--azul);
 }
-.mvv-card--destaque h3 { color: var(--branco); }
-.mvv-card--destaque p  { color: rgba(255,255,255,0.88); }
-.mvv-card--destaque .mvv-icon { background: rgba(255,255,255,0.15); }
-.mvv-card--destaque .mvv-icon i { color: #B0B0FF; }
 .mvv-icon {
   width: 56px; height: 56px;
   border-radius: 14px;
@@ -606,16 +611,17 @@ ul { list-style: none; }
   display: flex; align-items: center; gap: 8px;
   font-size: 0.88rem; color: var(--cinza-suave); font-weight: 500;
 }
-.mvv-card--destaque .valores-list li { color: rgba(255,255,255,0.90); }
 .valores-list li i { color: var(--azul); font-size: 0.8rem; }
-.mvv-card--destaque .valores-list li i { color: #B0B0FF; }
 
 /* =============================================
    PRODUTOS
    ============================================= */
 #produtos {
   padding: 100px 0;
-  background: var(--branco);
+  background:
+    linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)),
+    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80') center/cover no-repeat;
+  background-attachment: fixed, fixed;
 }
 .produtos-grid {
   display: grid;
@@ -715,7 +721,7 @@ ul { list-style: none; }
   padding: 100px 0;
   background:
     linear-gradient(135deg, rgba(26,26,46,0.94) 0%, rgba(35,35,60,0.96) 100%),
-    url('https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=1400&q=80') center/cover no-repeat;
+    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400&q=80') center/cover no-repeat;
   background-attachment: fixed, fixed;
   color: var(--branco);
 }
@@ -764,7 +770,10 @@ ul { list-style: none; }
    ============================================= */
 #contato {
   padding: 100px 0;
-  background: var(--cinza-claro);
+  background:
+    linear-gradient(rgba(244,246,250,0.93), rgba(244,246,250,0.93)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=80') center/cover no-repeat;
+  background-attachment: fixed, fixed;
 }
 .contato-grid {
   display: grid;
@@ -998,16 +1007,46 @@ ul { list-style: none; }
 
 /* Tablet landscape */
 @media (max-width: 1023px) {
-  #diferenciais {
-    background:
-      linear-gradient(135deg, rgba(26,26,46,0.94) 0%, rgba(35,35,60,0.96) 100%),
-      url('https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=1200&q=80') center/cover no-repeat;
-    background-attachment: scroll, scroll;
-  }
   #hero {
     background:
       linear-gradient(135deg, rgba(26,26,46,0.90) 0%, rgba(53,53,197,0.82) 100%),
+      url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80') center/cover no-repeat;
+    background-attachment: scroll, scroll;
+  }
+  #stats {
+    background:
+      linear-gradient(rgba(26,26,46,0.95), rgba(26,26,46,0.95)),
+      url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&q=80') center/cover no-repeat;
+    background-attachment: scroll, scroll;
+  }
+  #sobre {
+    background:
+      linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
+      url('https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=1200&q=80') center/cover no-repeat;
+    background-attachment: scroll, scroll;
+  }
+  #mvv {
+    background:
+      linear-gradient(rgba(244,246,250,0.93), rgba(244,246,250,0.93)),
+      url('https://images.unsplash.com/photo-1590341328520-63256eb32622?w=1200&q=80') center/cover no-repeat;
+    background-attachment: scroll, scroll;
+  }
+  #produtos {
+    background:
+      linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)),
+      url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80') center/cover no-repeat;
+    background-attachment: scroll, scroll;
+  }
+  #diferenciais {
+    background:
+      linear-gradient(135deg, rgba(26,26,46,0.94) 0%, rgba(35,35,60,0.96) 100%),
       url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80') center/cover no-repeat;
+    background-attachment: scroll, scroll;
+  }
+  #contato {
+    background:
+      linear-gradient(rgba(244,246,250,0.93), rgba(244,246,250,0.93)),
+      url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80') center/cover no-repeat;
     background-attachment: scroll, scroll;
   }
 
