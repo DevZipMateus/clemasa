@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clemasa.com.br/sitemap.xml
